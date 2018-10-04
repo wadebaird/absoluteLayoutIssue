@@ -1,0 +1,11 @@
+﻿
+/.vs
+/AbsoluteLayoutIssue/bin
+/AbsoluteLayoutIssue/obj
+/AbsoluteLayoutIssue/AbsoluteLayoutIssue.csproj.user
+/AbsoluteLayoutIssue.Android/bin
+/AbsoluteLayoutIssue.Android/obj
+/AbsoluteLayoutIssue.Android/AbsoluteLayoutIssue.Android.csproj.user
+/AbsoluteLayoutIssue.iOS/bin
+/AbsoluteLayoutIssue.iOS/obj
+/AbsoluteLayoutIssue.iOS/AbsoluteLayoutIssue.iOS.csproj.user

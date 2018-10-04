@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<absolutelayoutissue:CommonContentPage
+             xmlns:absolutelayoutissue="clr-namespace:AbsoluteLayoutIssue"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsoluteLayoutIssue.AbsoluteLayoutModeled">
+    <absolutelayoutissue:CommonContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <StackLayout x:Name="MainPageStackLayout" VerticalOptions="Start" Margin="20, 20" Spacing="25">
+                    <Label FontSize="Large" FontAttributes="Bold" Margin="20" TextColor="Red" HorizontalTextAlignment="Center" 
+                   Text="No network connection detected, please enable a connection to use this application." 
+                   IsVisible="False" />
+                </StackLayout>
+            </ScrollView>
+            <StackLayout AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                <ActivityIndicator IsEnabled="True" HorizontalOptions="FillAndExpand" Color="Black" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" />
+                <Label IsEnabled="True" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Loading..." IsVisible="{Binding IsBusy}"/>
+            </StackLayout>
+        </AbsoluteLayout>
+    </absolutelayoutissue:CommonContentPage.Content>
+</absolutelayoutissue:CommonContentPage>
